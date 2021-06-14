@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
 import "../sass/slider.scss";
-import img1 from "../source/img/slider/Icon.png";
-import img2 from "../source/img/slider/Icon2.png";
-import img3 from "../source/img/slider/Icon3.png";
+import img1 from "../assets/img/slider/Icon.png";
+import img2 from "../assets/img/slider/Icon2.png";
+import img3 from "../assets/img/slider/Icon3.png";
 import CreateSlide from "./createSlide";
 
 const SliderBlock = () => {
@@ -35,7 +35,7 @@ const SliderBlock = () => {
 	}
 
 	return (
-		<div className="sliderBlock">
+		<div className="sliderBlock" id="work">
 			<div className="slider-track" ref={slider}>
 				<CreateSlide img={img1} title="@aod" />
 				<CreateSlide img={img2} title="/aod" />

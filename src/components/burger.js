@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "../sass/burger.scss";
-import img from "../source/img/header/logo.png";
+import img from "../assets/img/header/logo.png";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Burger = () => {
 	const sidebar = useRef(null);
@@ -31,10 +32,11 @@ const Burger = () => {
 			<div className="sidebar" ref={sidebar}>
 				<ul>
 					<li className="nav-li"><a href="#"><img src={img} /></a></li>
-					<li className="nav-li"><a href="#">ABOUT US</a></li>
-					<li className="nav-li"><a href="#">WORK</a></li>
-					<li className="nav-li"><a href="#">SHOP</a></li>
-					<li className="nav-li"><a href="#">CONTACT</a></li>
+					<li className="nav-li" onClick={sidebarActive} ><Link to="/#about">about us</Link></li>
+					<li className="nav-li" onClick={sidebarActive}><Link to="/#work">work</Link></li>
+					<li className="nav-li" onClick={sidebarActive}><Link to="/#shop">shop</Link></li>
+					<li className="nav-li" onClick={sidebarActive}><Link to="/#contact">contact</Link></li>
+
 				</ul>
 			</div >
 		</div>

@@ -1,8 +1,8 @@
-import icon from "../source/img/blockInfoOne/icon1.png";
+import icon from "../assets/img/blockInfoOne/icon1.png";
 import "../sass/blockInfo1.scss";
 
 const BlockInfoOne = () => (
-	<div className="blockInfoOne">
+	<div className="blockInfoOne" id="about">
 		<div className="container">
 			<div className="blockInfoOne-img">
 				<img src={icon} alt="" />

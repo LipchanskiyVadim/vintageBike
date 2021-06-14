@@ -1,11 +1,11 @@
-import img1 from "../source/img/footer/1.png";
-import img2 from "../source/img/footer/2.png";
-import img3 from "../source/img/footer/3.png";
-import img4 from "../source/img/footer/4.png";
+import img1 from "../assets/img/footer/1.png";
+import img2 from "../assets/img/footer/2.png";
+import img3 from "../assets/img/footer/3.png";
+import img4 from "../assets/img/footer/4.png";
 import "../sass/footer.scss";
 
 const Footer = () => (
-	<div className="footer">
+	<div className="footer" id="contact">
 		<div className="container">
 			<div className="footer-wrap">
 				<div className="footer-left">

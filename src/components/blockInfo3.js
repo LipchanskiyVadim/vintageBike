@@ -1,6 +1,6 @@
-import icon from "../source/img/BlockInfoThree/icon.png";
-import icon2 from "../source/img/BlockInfoThree/icon2.png";
-import background1 from "../source/img/BlockInfoThree/background1.png";
+import icon from "../assets/img/BlockInfoThree/icon.png";
+import icon2 from "../assets/img/BlockInfoThree/icon2.png";
+import background1 from "../assets/img/BlockInfoThree/background1.png";
 import "../sass/blockInfo3.scss";
 
 const BlockInfoThree = () => (

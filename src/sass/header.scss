@@ -1,5 +1,5 @@
 //Шрифты
-@import "../fonts/fonts.css";
+@import "../assets/fonts/fonts.css";
 
 //Переменные
 $navColor: #4d4959;
@@ -7,7 +7,7 @@ $navColorHover: #00ff40;
 $logoColor: #000;
 
 .header {
-	background: url("../source/img/header/background1.png");
+	background: url("../assets/img/header/background1.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;

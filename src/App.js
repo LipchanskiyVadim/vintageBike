@@ -9,21 +9,24 @@ import Burger from './components/burger';
 import Footer from './components/footer';
 import Header from './components/header';
 import SliderBlock from './components/sliderBlock';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
 	return (
-		<div className="wrapper">
-			<Burger />
-			<Header />
-			<BlockInfo1 />
-			<BlockInfo2 />
-			<BlockInfo3 />
-			<BlockInfo4 />
-			<SliderBlock />
-			<BlockInfo5 />
-			<BlockInfo6 />
-			<Footer />
-		</div>
+		<BrowserRouter>
+			<div className="wrapper">
+				<Burger />
+				<Header />
+				<BlockInfo1 />
+				<BlockInfo2 />
+				<BlockInfo3 />
+				<BlockInfo4 />
+				<SliderBlock />
+				<BlockInfo5 />
+				<BlockInfo6 />
+				<Footer />
+			</div>
+		</BrowserRouter>
 	)
 }
 

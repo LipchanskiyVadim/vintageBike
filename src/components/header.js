@@ -1,15 +1,16 @@
-import logo from "../source/img/header/logo.png";
+import logo from "../assets/img/header/logo.png";
 import "../sass/header.scss";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = () => (
 	<header className="header">
 		<div className="header-content">
 			<nav>
 				<ul>
-					<li className="nav-li"><a href="#">about us</a></li>
-					<li className="nav-li"><a href="#">work</a></li>
-					<li className="nav-li"><a href="#">shop</a></li>
-					<li className="nav-li"><a href="#">contact</a></li>
+					<Link className="nav-li" to="/#about">about us</Link>
+					<Link className="nav-li" to="/#work">work</Link>
+					<Link className="nav-li" to="/#shop">shop</Link>
+					<Link className="nav-li" to="/#contact">contact</Link>
 				</ul>
 			</nav>
 			<div className="header-logo">
@@ -17,7 +18,7 @@ const Header = () => (
 			</div>
 		</div>
 		<div className="header-title"><a href="#">Vintage Bike<br />Shop</a></div>
-	</header>
+	</header >
 )
 
 export default Header;

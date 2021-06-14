@@ -1,4 +1,4 @@
-import logo from "../source/img/blockInfoSix/logo.png";
+import logo from "../assets/img/blockInfoSix/logo.png";
 import "../sass/blockInfo6.scss";
 import { Formik } from "formik";
 
