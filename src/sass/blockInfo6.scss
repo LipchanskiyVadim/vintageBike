@@ -1,0 +1,128 @@
+//Переменные
+$borderColor: #64c29e;
+
+.blockInfoSix {
+	background-color: white;
+	padding: 109px 0px 111px 0px;
+
+	@media (max-width: 560px) {
+		& {
+			padding: 30px 0px 50px 0px;
+		}
+	}
+
+	.blockInfoSix-logo {
+		text-align: center;
+	}
+
+	.blockInfoSix-title {
+		color: #848789;
+		font-family: Lato;
+		font-size: 24px;
+		font-style: italic;
+		text-align: center;
+		padding: 39px 0px 35px 0px;
+	}
+
+	.blockInfoSix-wrap {
+		margin: 0px auto;
+		text-align: center;
+
+		.blockInfoSix-input {
+			border: 1px solid #d3d7d9;
+			background-color: #ffffff;
+			display: inline-block;
+			max-width: 400px;
+			width: 100%;
+			height: 69px;
+			color: #dbdbdb;
+			font-family: Lato;
+			font-size: 20px;
+			padding: 24px 0px 24px 28px;
+			text-align: left;
+			-webkit-transition: 0.4s;
+			-o-transition: 0.4s;
+			transition: 0.4s;
+
+			input {
+				width: 98%;
+			}
+
+			@media (max-width: 560px) {
+				& {
+					margin: 0px auto;
+					margin-bottom: 10px;
+				}
+			}
+
+			&:hover {
+				border: 1px solid $borderColor;
+				-webkit-transition: 0.4s;
+				-o-transition: 0.4s;
+				transition: 0.4s;
+			}
+
+			& ::-webkit-input-placeholder {
+				color: #d3d7d9;
+				font-style: italic;
+			}
+
+			& :focus::-webkit-input-placeholder {
+				opacity: 0;
+				-webkit-transition: 0.4s;
+				-o-transition: 0.4s;
+				transition: 0.4s;
+			}
+		}
+
+		button {
+			background-color: $borderColor;
+			border: 1px solid $borderColor;
+			display: inline-block;
+			padding: 22.5px 45px 23px 45px;
+			margin-left: 4px;
+			-webkit-transition: 0.7s;
+			-o-transition: 0.7s;
+			transition: 0.7s;
+
+			color: #ffffff;
+			font-family: Lato;
+			font-size: 24px;
+			font-weight: 300;
+			text-transform: uppercase;
+
+			&:hover {
+				color: $borderColor;
+			}
+
+			@media (max-width: 560px) {
+				& {
+					width: 30%;
+					margin: 0px auto;
+					padding-left: 10%;
+				}
+			}
+
+			&:hover {
+				background-color: #f7f7f7;
+				border: 1px solid $borderColor;
+				border-radius: 2px;
+				-webkit-transition: 0.7s;
+				-o-transition: 0.7s;
+				transition: 0.7s;
+			}
+		}
+
+		@media (max-width: 560px) {
+			& {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+		}
+	}
+}

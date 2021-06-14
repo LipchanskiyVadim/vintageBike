@@ -1,0 +1,59 @@
+//Переменные
+$bgColor: #f7f7f7;
+$titleColor: #353738;
+$textColor: #848789;
+
+.blockInfoOne {
+	background-color: $bgColor;
+	.container {
+		padding: 117px 0px 0px 0px;
+		max-width: 1095px;
+		margin: 0px auto;
+
+		.blockInfoOne-img {
+			text-align: center;
+		}
+		.blockInfoOne-title {
+			color: $titleColor;
+			font-family: Lato;
+			font-size: 18px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 3.6px;
+			padding: 34px 0px 35px 0px;
+			text-align: center;
+
+			@media (max-width: 420px) {
+				& {
+					font-size: 16px;
+					padding: 20px 5spx 15px 5px;
+					line-height: 25px;
+				}
+			}
+		}
+
+		.blockInfoOne-text {
+			color: $textColor;
+			font-family: Lato;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 34px;
+			text-align: center;
+			padding: 0px 30px 142px 30px;
+
+			@media (max-width: 768px) {
+				& {
+					padding: 0px 30px 40px 30px;
+				}
+			}
+
+			@media (max-width: 420px) {
+				& {
+					font-size: 16px;
+					line-height: 28px;
+					padding: 0px 40px 40px 30px;
+				}
+			}
+		}
+	}
+}

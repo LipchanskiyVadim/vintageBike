@@ -1,0 +1,149 @@
+//Шрифты
+@import "../fonts/fonts.css";
+
+//Переменные
+$navColor: #4d4959;
+$navColorHover: #00ff40;
+$logoColor: #000;
+
+.header {
+	background: url("../source/img/header/background1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+
+	.header-content {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding-top: 65px;
+
+		.header-logo {
+			position: absolute;
+		}
+
+		ul {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			position: relative;
+
+			a {
+				color: $navColor;
+				font-family: Lato;
+				font-size: 13px;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 2.6px;
+				-webkit-transition: 0.4s;
+				-o-transition: 0.4s;
+				transition: 0.4s;
+
+				&:hover {
+					opacity: 0.6;
+					-webkit-transition: 0.4s;
+					-o-transition: 0.4s;
+					transition: 0.4s;
+					color: $navColorHover;
+					text-shadow: 1px 1px 1px $logoColor;
+				}
+			}
+
+			@media (max-width: 768px) {
+				& {
+					display: none;
+				}
+			}
+		}
+
+		.nav-li {
+			padding: 0px 37px;
+			position: relative;
+
+			&:after {
+				content: "";
+				height: 2px;
+				width: 2px;
+				background-color: $navColor;
+				border-radius: 50%;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				margin: -2px 0 0 0;
+			}
+
+			&:nth-child(2):after,
+			&:last-child:after {
+				display: none;
+			}
+
+			&:nth-child(2) {
+				padding: 0px 110px 0px 37px;
+			}
+
+			&:nth-child(3) {
+				padding: 0px 37px 0px 110px;
+			}
+		}
+	}
+
+	.header-title {
+		text-align: center;
+		margin: 20%;
+		font-size: 120px;
+		font-family: Nexa Script Light;
+		text-shadow: 5px 2px 11px $navColorHover;
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
+
+		@media (max-width: 768px) {
+			& {
+				font-size: 120px;
+			}
+		}
+		@media (max-width: 658px) {
+			& {
+				font-size: 100px;
+			}
+		}
+		@media (max-width: 530px) {
+			& {
+				font-size: 80px;
+			}
+		}
+		@media (max-width: 424px) {
+			& {
+				font-size: 70px;
+			}
+		}
+		@media (max-width: 322px) {
+			& {
+				font-size: 50px;
+			}
+		}
+		@media (max-width: 244px) {
+			& {
+				display: none;
+			}
+		}
+
+		a {
+			color: $logoColor;
+		}
+
+		&:hover {
+			text-shadow: 5px 2px 11px #f38e0d;
+			-webkit-transition: 0.3s;
+			-o-transition: 0.3s;
+			transition: 0.3s;
+		}
+	}
+}
