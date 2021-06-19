@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import "../sass/slider.scss";
 import img1 from "../assets/img/slider/Icon.png";
 import img2 from "../assets/img/slider/Icon2.png";
 import img3 from "../assets/img/slider/Icon3.png";
@@ -19,17 +18,17 @@ const SliderBlock = () => {
 	const slider = useRef(null);
 
 	const nextHandler = () => {
-		if (state == 0) {
+		if (state === 0) {
 			createHundler("-100%");
-		} else if (state == "-100%") {
+		} else if (state === "-100%") {
 			createHundler("-200%");
 		}
 	}
 
 	const prevHandler = () => {
-		if (state == "-100%") {
+		if (state === "-100%") {
 			createHundler(0);
-		} else if (state == "-200%") {
+		} else if (state === "-200%") {
 			createHundler("-100%")
 		}
 	}

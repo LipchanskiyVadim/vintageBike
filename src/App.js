@@ -1,4 +1,4 @@
-import './App.css';
+import './index.scss';
 import BlockInfo5 from './components/blockInfo5';
 import BlockInfo4 from './components/blockInfo4';
 import BlockInfo1 from './components/blockInfo1';

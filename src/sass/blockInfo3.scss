@@ -1,27 +1,18 @@
 .blockInfoThree {
 	.blockInfoThree-wrap {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 
 		@media (max-width: 768px) {
 			& {
-				-webkit-box-orient: vertical;
-				-webkit-box-direction: normal;
-				-ms-flex-direction: column;
 				flex-direction: column;
 			}
 		}
 
 		.item:nth-of-type(1) {
-			-webkit-box-ordinal-group: 3;
-			-ms-flex-order: 2;
 			order: 2;
 		}
 
 		.item:nth-of-type(2) {
-			-webkit-box-ordinal-group: 2;
-			-ms-flex-order: 1;
 			order: 1;
 		}
 
@@ -112,22 +103,14 @@
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-pack: center;
-			-ms-flex-pack: center;
 			justify-content: center;
-			-webkit-box-align: center;
-			-ms-flex-align: center;
 			align-items: center;
 			background-position: center;
 			background-color: gray;
-			-webkit-transition: 0.4s;
-			-o-transition: 0.4s;
 			transition: 0.4s;
 
 			&:hover {
 				background-color: #00ff40;
-				-webkit-transition: 0.4s;
-				-o-transition: 0.4s;
 				transition: 0.4s;
 			}
 

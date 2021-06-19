@@ -1,28 +1,16 @@
-body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-		"Droid Sans", "Helvetica Neue", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+html {
+	scroll-behavior: smooth;
 }
 
 /*обнуление*/
+body {
+	margin: 0;
+}
+
 * {
 	padding: 0;
 	margin: 0;
 	border: 0;
-}
-
-*,
-*:before,
-*:after {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 :focus,
@@ -49,9 +37,6 @@ body {
 	font-size: 100%;
 	line-height: 1;
 	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
 }
 
 input,
@@ -90,6 +75,12 @@ img {
 	vertical-align: top;
 }
 
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -99,5 +90,4 @@ h6 {
 	font-size: inherit;
 	font-weight: inherit;
 }
-
 /*--------------------*/

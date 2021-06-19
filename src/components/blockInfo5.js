@@ -6,7 +6,7 @@ import img5 from "../assets/img/blockInfoFive/5.png";
 import icon from "../assets/img/blockInfoFive/icon.png";
 import img6 from "../assets/img/blockInfoFive/7.png";
 import img7 from "../assets/img/blockInfoFive/8.png";
-import "../sass/blockInfo5.scss";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const BlockInfoFive = () => (
 	<div className="blockInfoFive" id="shop">
@@ -27,7 +27,7 @@ const BlockInfoFive = () => (
 				</div>
 				<div className="blockInfoFive-right">
 					<div className="blockInfoFive-right-top">
-						<a href="#"><img src={icon} alt="" /></a>
+						<Link to="/#header"><img src={icon} alt="" /></Link>
 					</div>
 					<div className="blockInfoFive-right-bottom">
 						<img src={img6} width="50%" alt="" />
@@ -37,7 +37,7 @@ const BlockInfoFive = () => (
 			</div>
 		</div>
 		<div className="blockInfoFive-bottom">
-			<div className="blockInfoFive-button"><a href="#">DISCOVER THE SHOP</a></div>
+			<div className="blockInfoFive-button"><Link to="/#header">DISCOVER THE SHOP</Link></div>
 		</div>
 	</div>
 )

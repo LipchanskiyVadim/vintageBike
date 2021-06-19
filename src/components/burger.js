@@ -1,26 +1,26 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "../sass/burger.scss";
 import img from "../assets/img/header/logo.png";
 import { HashLink as Link } from 'react-router-hash-link';
 
 const Burger = () => {
-	const sidebar = useRef(null);
+	const [isActive, setIsActive] = useState("");
 	const button = useRef(null);
 
 	const sidebarUpdater = (color, overflow) => {
 		document.body.style.overflow = overflow;
+
 		button.current.childNodes.forEach(element => {
 			element.style.background = color;
 		});
 	}
 
 	const sidebarActive = () => {
-		sidebar.current.classList.toggle('active');
+		setIsActive(isActive === "" ? 'active' : "");
 
-		sidebar.current.classList.contains('active') ?
-			sidebarUpdater("white", "hidden") : sidebarUpdater("black", "");
+		isActive ?
+			sidebarUpdater("black", "") : sidebarUpdater("white", "hidden");
 	}
-
 
 	return (
 		<div className="burger">
@@ -29,9 +29,9 @@ const Burger = () => {
 				<span></span>
 				<span></span>
 			</div>
-			<div className="sidebar" ref={sidebar}>
+			<div className={["sidebar", isActive].join(" ")}>
 				<ul>
-					<li className="nav-li"><a href="#"><img src={img} /></a></li>
+					<li className="nav-li"><Link to="/#header"><img src={img} alt="" /></Link></li>
 					<li className="nav-li" onClick={sidebarActive} ><Link to="/#about">about us</Link></li>
 					<li className="nav-li" onClick={sidebarActive}><Link to="/#work">work</Link></li>
 					<li className="nav-li" onClick={sidebarActive}><Link to="/#shop">shop</Link></li>
@@ -39,7 +39,7 @@ const Burger = () => {
 
 				</ul>
 			</div >
-		</div>
+		</div >
 	)
 };
 

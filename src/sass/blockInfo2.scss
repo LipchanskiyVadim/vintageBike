@@ -1,14 +1,9 @@
 .blockInfoTwo {
 	.blockInfoTwo-wrap {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 
 		@media (max-width: 768px) {
 			& {
-				-webkit-box-orient: vertical;
-				-webkit-box-direction: normal;
-				-ms-flex-direction: column;
 				flex-direction: column;
 			}
 		}
@@ -22,22 +17,14 @@
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
 		justify-content: center;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
 		align-items: center;
 		background-position: center;
 		background-color: gray;
-		-webkit-transition: 0.4s;
-		-o-transition: 0.4s;
 		transition: 0.4s;
 
 		&:hover {
 			background-color: #00ff40;
-			-webkit-transition: 0.4s;
-			-o-transition: 0.4s;
 			transition: 0.4s;
 		}
 

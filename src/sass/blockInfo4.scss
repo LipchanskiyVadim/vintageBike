@@ -1,7 +1,5 @@
 .blockInfoFour {
 	.blockInfoFour-wrap {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 
 		.blockInfoFour-left {
@@ -14,20 +12,12 @@
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-pack: center;
-			-ms-flex-pack: center;
 			justify-content: center;
-			-webkit-box-align: center;
-			-ms-flex-align: center;
 			align-items: center;
-			-webkit-transition: 0.4s;
-			-o-transition: 0.4s;
 			transition: 0.4s;
 
 			&:hover {
 				background-color: #00ff40;
-				-webkit-transition: 0.4s;
-				-o-transition: 0.4s;
 				transition: 0.4s;
 			}
 
@@ -130,9 +120,6 @@
 
 		@media (max-width: 768px) {
 			& {
-				-webkit-box-orient: vertical;
-				-webkit-box-direction: normal;
-				-ms-flex-direction: column;
 				flex-direction: column;
 			}
 		}

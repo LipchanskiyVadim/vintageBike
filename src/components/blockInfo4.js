@@ -1,13 +1,13 @@
 import icon from "../assets/img/blockInfoFour/icon.png";
 import icon2 from "../assets/img/blockInfoFour/icon2.png";
 import background1 from "../assets/img/blockInfoFour/background.png";
-import "../sass/blockInfo4.scss";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const BlockInfoFour = () => (
 	<div className="blockInfoFour">
 		<div className="blockInfoFour-wrap">
 			<div className="blockInfoFour-left">
-				<a href="#"><img src={icon} alt="" /></a>
+				<Link to="/#header"><img src={icon} alt="" /></Link>
 			</div>
 			<div className="blockInfoFour-center">
 				<div className="blockInfoFour-top">

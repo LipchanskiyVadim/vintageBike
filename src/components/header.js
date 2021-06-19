@@ -1,10 +1,9 @@
 import logo from "../assets/img/header/logo.png";
-import "../sass/header.scss";
 import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = () => (
 	<header className="header">
-		<div className="header-content">
+		<div className="header-content" id="header">
 			<nav>
 				<ul>
 					<Link className="nav-li" to="/#about">about us</Link>
@@ -14,10 +13,10 @@ const Header = () => (
 				</ul>
 			</nav>
 			<div className="header-logo">
-				<a href="#"><img src={logo} alt="" /></a>
+				<Link to="/#header"><img src={logo} alt="" /></Link>
 			</div>
 		</div>
-		<div className="header-title"><a href="#">Vintage Bike<br />Shop</a></div>
+		<div className="header-title"><Link to="/#header">Vintage Bike<br />Shop</Link></div>
 	</header >
 )
 

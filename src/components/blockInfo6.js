@@ -1,11 +1,11 @@
 import logo from "../assets/img/blockInfoSix/logo.png";
-import "../sass/blockInfo6.scss";
 import { Formik } from "formik";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const BlockInfoSix = () => (
 	<div className="blockInfoSix">
 		<div className="blockInfoSix-logo">
-			<a href="#"><img src={logo} alt="" /></a>
+			<Link to="/#header"><img src={logo} alt="" /></Link>
 		</div>
 		<div className="blockInfoSix-title">
 			Stay on the saddle!

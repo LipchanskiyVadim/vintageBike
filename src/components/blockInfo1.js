@@ -1,5 +1,4 @@
 import icon from "../assets/img/blockInfoOne/icon1.png";
-import "../sass/blockInfo1.scss";
 
 const BlockInfoOne = () => (
 	<div className="blockInfoOne" id="about">
